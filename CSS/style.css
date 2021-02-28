@@ -1,0 +1,265 @@
+body
+{
+	background-color:rgba(70,50,30,0.5);
+	color: rgba(0,0,0,0.5);
+	margin: 0px;
+}
+h1
+{
+	background:linear-gradient(45deg,orange,yellow,blue,white);
+	margin: 0px;
+	height: 45px;
+	padding: 30px;
+	text-align: center;
+	color: white;
+	position: sticky;
+	top: 0px;
+}
+#main-nav
+{
+	background-color:cyan;
+	text-align: center;
+	height: 40px;
+	position: sticky;
+	top: 60px;
+}
+#main-nav a
+{
+	text-decoration: none;
+	margin: 15px;
+	padding: 4px;
+	margin-top: 10px;
+	display: inline-block;
+	
+}
+#main-nav a.active
+{
+	background:linear-gradient(45deg,grey,darkred);
+	border-radius:10px;
+	color:white;
+}
+#main-nav a:hover
+{
+	background:linear-gradient(45deg,grey,rgb(242,147,36));
+	border-radius:10px;
+	box-shadow:0 0 10px white;
+}
+#style
+{   
+	text-align:center;
+	margin:15px 0px;
+}
+#style .style-article
+{   
+	box-shadow:0 0 10px cyan;
+	width:420px;
+	height:500px;
+	top: 100px;
+	margin:5px;
+	display:inline-grid;
+	border-radius:0px 30px 0px 30px;
+	transition:all 0.5s;
+}
+#style .style-article:hover
+{
+	width:430px;
+	cursor:pointer;
+}
+.style-article img
+{
+	width:100%;
+}
+.style-article .style-text
+{
+	padding:10px;
+}
+#gallery img
+{
+	box-shadow:0 0 10px orange;
+	width:250px;
+	height:300px;
+	margin:5px;
+	display:inline-grid;
+	border-radius:0px 30px 0px 30px;
+	transition:all 0.5s;
+}
+#gallery img:hover
+{
+	width: 260px;
+	cursor: pointer;
+}
+#about
+{   
+	text-align:center;
+	margin:0px 0px;
+	overflow: hidden;
+}
+h3
+{
+	background-color: orange;
+	height: 45px;
+	margin: 0px;
+	text-align: center;
+}
+#about .about-article
+{   
+	box-shadow:0 0 40px yellow;
+	width:800px;
+	height:600px;
+	top: 100px;
+	margin:5px;
+	display:inline-grid;
+	border-radius:0px 30px 0px 30px;
+	transition:all 0.5s;
+	overflow: hidden;
+}
+#about img
+{
+	width: 800px;
+	height: 600px;
+	border-radius:0px 30px 0px 30px;
+	transform-origin: right;
+	transition: all 2s;
+}
+#about img:hover
+{
+	transform:translateX(100%);
+}
+ #text
+		{
+	
+			text-align: center;
+			top: -100px;
+		    left: 0px;
+			background-color: rgba(0,0,0);
+			border-radius: 20px 0px 0px 20px;
+			color: white;
+			transform: translateX(-100%);
+			transition: all 3s;
+
+
+		}
+		div:hover #text
+	    {
+	    	transform: translateX(0%);
+	    }
+#contact
+{
+	text-align: center;
+	margin: 15px 0px;
+}
+#contact .contact-article
+{   
+	box-shadow:0 0 10px cyan;
+	width:420px;
+	height:500px;
+	top: 100px;
+	margin:5px;
+	display:inline-grid;
+	border-radius:0px 30px 0px 30px;
+	transition:all 0.5s;
+}
+#abc
+		{
+			background:linear-gradient(45deg,lawngreen,blue,green,yellow,lime);
+			width: 270px;
+			margin: 100px auto;
+			text-align: center;
+			color: white;
+			border-radius: 20px;
+			box-shadow: 0 0 10px white;
+		}
+		.abc input[type='text'],
+		.abc input[type='Type Message'],
+		.abc input[type='email'],
+		.abc input[type='mobail number'],
+		.abc select
+		{
+			height: 25px;
+			margin-top: 10px;
+			border-radius: none;
+			outline:none;
+			border:none;
+			border-radius: 20px;
+			background:none;
+			border-bottom: 3px solid white;
+			color: black;
+			font-size:16px; 
+		} 
+		::placeholder
+		{
+			color: black;
+		}
+		select
+		{
+			width: 185px;
+			color: white;
+		}
+		 input[type='submit']
+		{
+			margin: 20px;
+			width: 100px;
+			height: 25px;
+			border-radius: 10px;
+			outline:none;
+			border:none;
+			background:linear-gradient(45deg,green,orange,blue);
+			font-weight: bold;
+			color: blue;
+			font-size: 15px; 
+		}
+		 input[type='submit']:hover
+		 {
+		 	box-shadow: 0 0 10px white;
+		 	cursor: pointer;
+		 }
+		 .far
+		 {
+		 	font-size: 60px;
+		 	margin-top: -30px;
+		 	background-color: blue;
+		 	border-radius:50%;
+		 	border:10px solid gray; 
+		 }
+ @media (max-width:600px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+}
+@media (max-width:750px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+	#slasa .salsa-article img
+	{
+		width:400px;
+	}
+	#gallery img
+	{
+		width: 200px;
+	}
+
+
+}
+@media (max-width:500px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+	#slasa .salsa-article img
+	{
+		width:200px;
+	}
+	#gallery img
+     {
+     	width: 
+     }
+
+}
+
+
